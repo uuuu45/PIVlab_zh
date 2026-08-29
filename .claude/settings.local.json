@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__matlab__evaluate_matlab_code",
+      "Bash(explorer /select,\"C:\\\\Users\\\\thiel\\\\.claude\\\\plans\\\\pivlab-usually-uses-the-witty-pearl.md\")",
+      "Bash(explorer \"C:\\\\Users\\\\thiel\\\\.claude\\\\plans\")",
+      "Bash(xargs grep *)",
+      "Bash(findstr /R /N \"PIVlab_capture_OPTRONIS.*synced_start\\\\|ac_ROI_general\" *.m PIVlab_capture_resources\\\\*.m +acquisition\\\\*.m)",
+      "Bash(findstr /S \"PIVlab_capture_OPTRONIS_synced_start\\\\|PIVlab_capture_OPTRONIS_bitflow_synced_start\" *.m PIVlab_capture_resources\\\\*.m +acquisition\\\\*.m)",
+      "Bash(findstr /R \"max_cam_res.*=\" *.m +acquisition\\\\*.m +roi\\\\*.m)",
+      "mcp__matlab__run_matlab_test_file",
+      "WebSearch",
+      "WebFetch(domain:www.piv.de)",
+      "WebFetch(domain:iopscience.iop.org)",
+      "WebFetch(domain:piv.de)"
+    ]
+  }
+}

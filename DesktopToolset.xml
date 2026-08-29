@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolset id="user_apps_toolset" template="false">
+    <tool app_file_path="PIVlab_GUI.m" handler_class="com.mathworks.deployment.desktop.toolstrip.ToolboxToolSetExtensionHandler" id="645addf0-c70b-481c-b49a-06b1e3229d12:PIVlab_GUI.m" label="PIVlab_GUI" quick_access_eligible="false" toolset_id="user_apps_toolset">
+        <callback>PIVlab_GUI</callback>
+        <summary></summary>
+        <description></description>
+        <icon filename="matlab_app_generic_icon_24" id="app"/>
+        <icon filename="matlab_app_generic_icon_16"/>
+        <parent_tool id="my_apps" toolset_id="apps_toolset"/>
+    </tool>
+</toolset>

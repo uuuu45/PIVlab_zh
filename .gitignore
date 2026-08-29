@@ -1,0 +1,13 @@
+
+*.asv
+*.bak
+
+/.git/
+
+/.git/
+
+/ftp_info.txt
+
+/_Github token.txt
+
+/Standalone/

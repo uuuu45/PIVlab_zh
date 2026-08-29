@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addonCore>
+  <label>PIVlab</label>
+  <version>3.14</version>
+  <type>Toolbox</type>
+  <identifier>f7c33dd1-18cd-4708-a025-7ce388954b13</identifier>
+  <summary>Easy to use, GUI based tool to capture, analyze, validate, postprocess, visualize and simulate PIV data.
+http://PIVlab.de</summary>
+  <description>PIVlab is a free and open-source particle image velocimetry (PIV) software and is currently the most frequently cited PIV tool on the market. It can be used to calculate the velocity distribution within imported (or captured) images. It can also control OPTOLUTION’s lasers, cameras and synchronizers, and derive, display and export multiple parameters of the flow pattern. The simple graphical user interface makes PIV data acquisition and data post-processing fast and efficient.</description>
+  <createdBy name="William Thielicke"/>
+  <image>resources/screenshot.png</image>
+</addonCore>

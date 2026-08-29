@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paths>
+  <path>.</path>
+  <path>+wOFV\OptimizationSolvers\minFunc</path>
+  <path>+wOFV\OptimizationSolvers\minFunc\autoDif</path>
+  <path>+wOFV\OptimizationSolvers\minFunc\logisticExample</path>
+  <path>+wOFV\OptimizationSolvers\minFunc\minFunc</path>
+  <path>Example_scripts</path>
+  <path>OptimizationSolvers\minFunc</path>
+  <path>OptimizationSolvers\minFunc\autoDif</path>
+  <path>OptimizationSolvers\minFunc\logisticExample</path>
+  <path>OptimizationSolvers\minFunc\minFunc</path>
+  <path>PIVlab_capture_resources</path>
+  <path>PIVlab_capture_resources\bitflow_resources</path>
+  <path>PIVlab_capture_resources\bitflow_resources\R2024b</path>
+  <path>PIVlab_capture_resources\bitflow_resources\R2025b</path>
+  <path>PIVlab_capture_resources\bitflow_resources\R2026a</path>
+  <path>PIVlab_capture_resources\pco_resources</path>
+  <path>doc</path>
+  <path>help</path>
+  <path>unittests</path>
+  <path>unittests\test_bias+rmse</path>
+</paths>
