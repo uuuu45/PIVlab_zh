@@ -14,7 +14,10 @@ if size(filepath,1) >1 || gui.retr('video_selection_done') == 1
 		roirect(2)=y;
 		roirect(3)=w;
 		roirect(4)=h;
-		imagesize=gui.retr('expected_image_size');
+		imagesize=roi.getImageSize;
+		if numel(imagesize) < 2
+			return
+		end
 		if roirect(1)<1
 			roirect(1)=1;
 		end
@@ -27,6 +30,8 @@ if size(filepath,1) >1 || gui.retr('video_selection_done') == 1
 		if roirect(4)>imagesize(1)-roirect(2)
 			roirect(4)=imagesize(1)-roirect(2);
 		end
+		roirect(3)=max(0,roirect(3));
+		roirect(4)=max(0,roirect(4));
 		gui.put ('roirect',roirect);
 		roi.select_Callback
 	end

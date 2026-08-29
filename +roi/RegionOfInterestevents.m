@@ -6,8 +6,12 @@ switch(evname)
 	%disp(['ROI moving previous position: ' mat2str(evt.PreviousPosition)]);
 	%disp(['ROI moving current position: ' mat2str(evt.CurrentPosition)]);
 	case{'MovingROI'}
-		imagesize=gui.retr('expected_image_size');
+		imagesize=roi.getImageSize;
 		roirect = round(src.Position);
+		if numel(imagesize) < 2 || numel(roirect) ~= 4
+			src.Label = '无法确定图像尺寸，无法设置 ROI';
+			return
+		end
 
 		if roirect(1)<1
 			roirect(1)=1;
@@ -21,6 +25,8 @@ switch(evname)
 		if roirect(4)>imagesize(1)-roirect(2)
 			roirect(4)=imagesize(1)-roirect(2);
 		end
+		roirect(3)=max(0,roirect(3));
+		roirect(4)=max(0,roirect(4));
 		if roirect(3)==0 || roirect(4)==0
 			src.Label = ['Click and drag with the mouse to draw a rectangle'];
 			src.Position(3)=50;
@@ -38,4 +44,3 @@ switch(evname)
 		delete(findobj('tag', 'RegionOfInterest'))
 		roi.clear_roi_Callback
 end
-

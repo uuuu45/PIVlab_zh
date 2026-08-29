@@ -5,6 +5,7 @@ pivlab_axis = gui.retr('pivlab_axis');
 if size(filepath,1) > 1 || gui.retr('video_selection_done') == 1
 	delete(findobj('tag','warning'));
 	gui.toolsavailable(0);
+	cleanup = onCleanup(@() gui.toolsavailable(1));
 	toggler=gui.retr('toggler');
 	selected=2*floor(get(handles.fileselector, 'value'))-(1-toggler);
 	filepath=gui.retr('filepath');
@@ -35,6 +36,4 @@ if size(filepath,1) > 1 || gui.retr('video_selection_done') == 1
 	dummyevt.EventName = 'MovingROI';
 	roi.RegionOfInterestevents(regionOfInterest,dummyevt); %run the moving event once to update displayed length
 	%put ('roirect',roi.Position);
-	gui.toolsavailable(1);
 end
-
